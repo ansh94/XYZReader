@@ -81,7 +81,6 @@
     <style name="AppBar_layoutItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/AppBar_layout_height</item>
-        <item name="android:background">?colorPrimary</item>
         <item name="android:elevation">@dimen/AppBar_elevation</item>
     </style>
 
