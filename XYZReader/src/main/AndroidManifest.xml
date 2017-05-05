@@ -25,6 +25,7 @@
 
         <activity
             android:name=".ui.ArticleDetailActivity"
+            android:theme="@style/Theme.Bacon.Detail"
             android:parentActivityName=".ui.ArticleListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

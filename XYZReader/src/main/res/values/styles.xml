@@ -18,11 +18,90 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/color_700</item>
+        <item name="colorAccent">@color/accent_200</item>
+        <item name="colorPrimary">@color/color_500</item>
+    </style>
 
+    <style name="CardHeader" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@color/font_PrimaryText_87</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">4</item>
+    </style>
+
+    <style name="CardBody" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/font_Disable_38</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DetailsDescription" parent ="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/font_SecondaryText_54</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
+        <item name="android:textColorLink">@color/accent_200</item>
+        <item name="android:lineSpacingMultiplier">@fraction/detail_body_line_spacing_multiplier</item>
+        <item name="android:paddingBottom">@dimen/detail_body_bottom_margin</item>
+        <item name="android:layout_marginLeft">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginStart">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginRight">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginEnd">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Fab_Button">
+        <item name="android:elevation">@dimen/fab_elevation</item>
+        <item name="pressedTranslationZ">@dimen/fab_press_translation_z</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:stateListAnimator">@animator/fab_state_list_anim</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Article list Views -->
+    <style name="AppBar_layoutItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/AppBar_layout_height</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation">@dimen/AppBar_elevation</item>
+    </style>
+
+    <style name="CollapsingToolBar_layoutItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+        <item name="expandedTitleMarginStart">@dimen/CollapsingToolBar_title_margin</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+    </style>
+
+
+    <style name="ToolBar_layoutItem">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:layout_marginLeft">@dimen/list_toolbar_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/list_toolbar_side_margin</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?actionBarSize</item>
     </style>
 
 </resources>
