@@ -8,7 +8,7 @@
 
 ## About
 
-This project is part of the [Udacity Android Developer Nanodegree](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801) under the name - Project P5: Make Your App Material.
+This project is part of the Udacity Android Developer Nanodegree under the name - Project P5: Make Your App Material.
 
 ### Project Overview:
 In this project, I redesigned an app to follow the [Material Design guidelines](https://material.io/guidelines/material-design/introduction.html) and translate a set of static design mocks to a living and breathing app.
